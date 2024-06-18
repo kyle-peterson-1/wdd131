@@ -5,56 +5,64 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Kyle Peterson" content="WDD 131 - Dynamic Web Fundamentals. Home page and bio. ">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>WDD 131 - Kyle Peterson</title>
 </head>
 
 <body>
-    <header>
-        <h1>
-            WDD 131: Dynamic Web Fundamentals - Kyle Peterson
-        </h1>
-        <nav>
-            <a href="https://www.linkedin.com/in/kyle-peterson-57301b1b3/">LinkedIn</a>
-            <a href="https://byui.instructure.com/.">I-Learn</a>
-            <a
-                href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27">Scripture</a>
-            <a href="">Final Project</a>
-        </nav>
-    </header>
-    <main>
-        <section class="card">
-            <h2>About Me</h2>
-            <img src="images/profile.jpg" alt="Profile Picture">
+    <div class="container">
+        <header>
+            <h1>
+                WDD 131: Dynamic Web Fundamentals - Kyle Peterson
+            </h1>
+            <nav>
+                <a href="https://www.linkedin.com/in/kyle-peterson-57301b1b3/">LinkedIn</a>
+                <a href="https://byui.instructure.com/.">I-Learn</a>
+                <a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27">Scripture</a>
+                <a href="">Final Project</a>
+            </nav>
+        </header>
+        <main>
+            <section class="card">
+                <h2>About Me</h2>
+                <img src="images/profile.jpg" alt="Profile Picture">
+                <p>
+                    My name is Kyle. I was born in Salt Lake City, Utah but have spent most of my life in Queen Creek
+                    Arizon
+                    where I currently live.
+                    I currently work as a BIM (Building Information Modeling) specialist, where I create 3D models for
+                    companies in the somiconductor industry.
+                    My wife and I are excited to be growing our family this year with our first baby boy, who will be
+                    born
+                    this October.
+                    I love to divelope my skills and learn now things, I love getting my hands dirty and building things
+                    as
+                    well.
+                </p>
+            </section>
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                    <li><a href="https://css-tricks.com/">CSS - tricks</a></li>
+                    <li><a href="https://www.udemy.com/">Udemy</a></li>
+                    <li><a href="https://dev.to/">Dev.to Community</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
             <p>
-                My name is Kyle. I was born in Salt Lake City, Utah but have spent most of my life in Queen Creek Arizon
-                where I currently live.
-                I currently work as a BIM (Building Information Modeling) specialist, where I create 3D models for
-                companies in the somiconductor industry.
-                My wife and I are excited to be growing our family this year with our first baby boy, who will be born
-                this October.
-                I love to divelope my skills and learn now things, I love getting my hands dirty and building things as
-                well.
+                &copy; <span id="currentyear"></span> Kyle Peterson Arizona, United States
             </p>
-        </section>
-        <section class="card">
-            <h2>Web Dev Resources</h2>
-            <ul>
-                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-                <li><a href="https://css-tricks.com/">CSS - tricks</a></li>
-                <li><a href="https://www.udemy.com/">Udemy</a></li>
-                <li><a href="https://dev.to/">Dev.to Community</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>
-            &copy; <span id="currentyear"></span> Kyle Peterson Arizona, United States
-        </p>
-        <p id="lastModified">
+            <p id="lastModified">
 
-        </p>
-    </footer>
-
+            </p>
+        </footer>
+    </div>
 </body>
 
 </html>
