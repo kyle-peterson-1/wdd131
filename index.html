@@ -1,37 +1,38 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-Us">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Kyle Peterson" content="WDD 131 - Dynamic Web Fundamentals. Home page and bio. ">
-    <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Kyle Peterson</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Kyle Peterson - divelope my skills by designing a home page with HTML, CSS, and JavaScript.">
+    <meta name="author" content="Kyle Peterson">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>WDD 131 - Kyle Peterson</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h1>
-                WDD 131: Dynamic Web Fundamentals - Kyle Peterson
-            </h1>
-            <nav>
-                <a href="https://www.linkedin.com/in/kyle-peterson-57301b1b3/">LinkedIn</a>
-                <a href="https://byui.instructure.com/.">I-Learn</a>
-                <a
-                    href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27">Scripture</a>
-                <a href="">Final Project</a>
-            </nav>
-        </header>
-        <main>
-            <section class="card">
-                <h2>About Me</h2>
-                <img src="images/profile.jpg" alt="Profile Picture">
-                <p>
-                    My name is Kyle. I was born in Salt Lake City, Utah but have spent most of my life in Queen Creek
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Kyle Peterson</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/kyle-peterson-57301b1b3/" target="_blank">LinkedIn</a>
+            <a href="https://byui.instructure.com/" target="_blank">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27"
+                target="_blank">Scripture</a>
+            <a href="#" target="_blank">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="info">
+                <p>My name is Kyle. I was born in Salt Lake City, Utah but have spent most of my life in Queen Creek
                     Arizon
                     where I currently live.
                     I currently work as a BIM (Building Information Modeling) specialist, where I create 3D models for
@@ -43,26 +44,37 @@
                     as
                     well.
                 </p>
-            </section>
-            <section class="card">
-                <h2>Web Dev Resources</h2>
-                <ul>
-                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-                    <li><a href="https://css-tricks.com/">CSS - tricks</a></li>
-                    <li><a href="https://www.udemy.com/">Udemy</a></li>
-                    <li><a href="https://dev.to/">Dev.to Community</a></li>
-                </ul>
-            </section>
-        </main>
-        <footer>
-            <p>
-                &copy; <span id="currentyear"></span> Kyle Peterson Arizona, United States
-            </p>
-            <p id="lastModified">
-
-            </p>
-        </footer>
-    </div>
+                <img src="images/Profile picture.jpg" alt="Profile Picture">
+            </div>
+            <h3>Arizona, United States</h3>
+            <div class="flag">
+                <div>
+                    <img src="images/usa-flag.jpg" alt="United States Flag">
+                    <span>The United States Flag</span>
+                </div>
+                <p>
+                    The United States is a country of vast landscapes, diverse cultures,
+                    and a rich history in North America. It's one of the largest countries in the world,
+                    with an area of approximately 9,834,000 km². There is no official language at the federal level,
+                    but English is the de facto national language, widely spoken and used in government and commerce.
+                </p>
+            </div>
+        </section>
+        <section class="card links">
+            <h2>Web Dev Rosources</h2>
+            <ul>
+                <li><a href="https://coderwall.com/" target="_blank">Coder Wall</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS - tricks</a></li>
+                <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Kyle Peterson Arizona, United States</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
