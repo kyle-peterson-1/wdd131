@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --primary-color: #006d77;
+    --secondary-color: #83c5be;
+    --subtle-color: #eee;
+    --accent-color: #fff;
+    --required-color: #940000;
+    --form-max-width: 800px;
+}
+
+header h1,
+footer {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    max-width: 1000px;
+    margin: auto;
+}
+
+main {
+    border-left: 5px solid var(--primary-color);
+    border-right: 5px solid var(--primary-color);
+}
+
+footer {
+    text-align: center;
+}
+
+.review-form {
+    padding: 1rem;
+    width: 100%;
+    max-width: var(--form-max-width);
+    margin: auto;
+}
+
+.review-form label {
+    display: block;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.review-form div {
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.review-form input[type='text'],
+.review-form input[type='date'],
+.review-form select,
+.review-form textarea {
+    display: block;
+    padding: 0.75rem;
+    width: 100%;
+    max-width: var(--form-max-width);
+    font-size: 1.2rem;
+}
+
+.review-form input[type='submit'] {
+    padding: 0.8rem;
+    width: 100%;
+    max-width: var(--form-max-width);
+    margin-top: 1rem;
+    background-color: var(--secondary-color) !important;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.review-form input[type='submit']:hover {
+    background-color: var(--primary-color) !important;
+    color: var(--subtle-color);
+}
+
+.review-form input:required,
+.review-form select:required {
+    border-left: 5px solid var(--required-color);
+}
+
+.review-form input:valid,
+.review-form select:valid,
+.review-form textarea:valid {
+    background-color: var(--subtle-color);
+}
+
+.rating-section {
+    display: grid;
+    /*grid-template-columns: repeat(5, 1fr);*/
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-gap: 0 1rem;
+    text-align: center;
+    width: 100%;
+    max-width: var(--form-max-width);
+    margin-top: -1rem;
+    padding: 0;
+}
+
+.rating-section label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.75rem;
+}
+
+.rating-section span {
+    width: 100%;
+    font-size: 1.25rem;
+}
+
+.rating-section input {
+    width: 100%;
+    height: 1.2rem;
+}
+
+.features-section {
+    margin-top: -0.5rem;
+}
+
+.features-section input {
+    width: 1.2rem;
+    height: 1.2rem;
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-right: 0.4rem;
+}
+
+.optional {
+    font-style: italic;
+}
+
+.required {
+    color: var(--required-color);
+}
+
+.reviewed-count {
+    margin: auto;
+    max-width: var(--form-max-width);
+    text-align: center;
+    padding: 2rem 0;
+}
